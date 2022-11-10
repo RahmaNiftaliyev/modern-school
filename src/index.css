@@ -1,0 +1,189 @@
+@import url("https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+:root {
+  --font-board: "Fredericka the Great", cursive;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #242426;
+}
+
+.header {
+  height: 100vh;
+  position: relative;
+  background-image: url("./assets/images/design.png");
+  overflow: hidden;
+  width: 100%;
+}
+
+.header h1,
+.header h1 span {
+  font-family: "Poppins" !important;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 55px;
+  line-height: 82px;
+}
+
+.header > div:first-child {
+  margin: 20px;
+  background: #282f33;
+  border-radius: 20px;
+  padding: 0 15px;
+  border: 1px solid #59606e;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 120px;
+  /* box-shadow: 0 5px 10px #000; */
+}
+
+.header h1 {
+  color: #f20051;
+}
+
+.header h1 span {
+  color: white;
+}
+
+h2 {
+  border-bottom: 1px solid #383d47;
+  display: inline-block;
+  width: 800px;
+  text-align: center;
+  padding: 30px 10px;
+  border-radius: 12px;
+  box-shadow: inset 0 -5px 0 #f2005139;
+  filter: drop-shadow(14px 14px 15px rgb(0, 0, 0));
+
+  margin-top: 120px;
+  margin-left: 120px;
+}
+
+h2 span {
+  font-family: var(--font-board) !important;
+  font-size: 4rem !important;
+  font-weight: 500;
+  color: #95a1b5 !important;
+}
+
+.header > div:first-child > button {
+  padding: 15px 30px;
+  border-radius: 8px;
+  background-color: #f20051;
+  color: white;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  font-size: 18px;
+  border: 1px inset #f20051;
+  box-shadow: inset 0 -5px 0 #31378642;
+}
+
+.header > div:first-child > button:hover {
+  background-color: white;
+  color: #f20051;
+  transform: rotate(36deg);
+  transform: scale(1.01);
+}
+
+.header > div:last-child {
+  height: 750px;
+  border-bottom: 1px solid #383d47;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px;
+  position: relative;
+}
+
+.header > div:last-child > img {
+  filter: drop-shadow(14px 14px 15px rgb(0, 0, 0));
+  animation: image 4s ease-in-out infinite alternate-reverse both;
+  position: absolute;
+  right: -180px;
+  cursor: pointer;
+}
+
+.header > div:last-child > img ~ button {
+  width: 80px;
+  height: 80px;
+  border-radius: 40px;
+  cursor: pointer;
+  background-color: #f20051;
+  color: white;
+  border: 1px solid #000;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  bottom: 20px;
+  left: calc((100% - 40px) / 2);
+  transition: 0.6s ease;
+}
+
+.header > div:last-child > img ~ button:hover {
+  filter: drop-shadow(7px 7px 7px rgb(0, 0, 0));
+}
+
+.mockup-animate {
+  filter: drop-shadow(8px 8px 15px rgb(0, 0, 0));
+  animation: image 4s ease-in-out infinite alternate-reverse both;
+}
+
+@keyframes image {
+  0% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(-10px);
+  }
+}
+
+.content-header-container {
+  max-width: 1200px;
+  height: 500px;
+  border-radius: 19px;
+  margin: 20px;
+  background-image: url("./assets/images/line.png");
+}
+
+.content-header-container ~ div {
+  position: absolute;
+  top: 150px;
+  right: 20px;
+  padding-top: 20px;
+  border: 1px solid #383d47;
+  background-color: #0e1217;
+  border-radius: 12px;
+  box-shadow: 0 2px 1px #000;
+  max-width: 581px;
+  overflow: hidden;
+}
+
+.content-header-container ~ div p {
+  width: 100%;
+  color: white;
+  font-weight: 300;
+  font-size: 24px;
+  cursor: pointer;
+  background-color: #1c1f26;
+  padding: 10px 0;
+  text-align: center;
+  font-weight: 700;
+  font-family: "Poppins" !important;
+}
+
+.content-header-container ~ div p span {
+  color: #f20051;
+}

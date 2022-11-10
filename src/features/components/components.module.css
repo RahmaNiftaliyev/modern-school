@@ -1,0 +1,9 @@
+.card_container {
+    height: 450px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 8px;
+    border: 1px solid #383d47;
+    box-shadow: 1px 2px 5px -3px #000;
+    background: linear-gradient(135deg,#cfec777b,#32e0f4);
+}
